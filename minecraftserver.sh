@@ -11,6 +11,6 @@ source ./run.sh
 sed -i 's/eula=false/eula=true/g' eula.txt
 unzip mods.zip -d mods
 
-echo '-Xms2048M' >> user_jvm_args.txt
+echo '\n-Xms2048M' >> user_jvm_args.txt
 echo '-Xmx4096M' >> user_jvm_args.txt
-echo 'nogui' >> user_jvm_args.txt
+echo 'nogui' >> run.sh
